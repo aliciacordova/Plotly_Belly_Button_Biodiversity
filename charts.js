@@ -97,16 +97,16 @@ function buildCharts(sample) {
         tickvals: [0,1,2,3,4,5,6,7,8,9],
         ticktext: yticks
     },
-    //annotations: [{
-      //xref: 'paper',
-      //yref: 'paper',
-      //x: 0.5,
-      //xanchor: 'center',
-      //y: -0.25,
-      //yanchor: 'center',
-      //text: 'The bar chart displays the top 10 bacterial species (OTUs)<br>with the number of samples found in your belly button',
-      //showarrow: false
-    //}]
+    annotations: [{
+      xref: 'paper',
+      yref: 'paper',
+      x: 0.5,
+      xanchor: 'center',
+      y: -0.25,
+      yanchor: 'center',
+      text: 'The bar chart displays the top 10 bacterial species (OTUs)<br>with the number of samples found in your belly button',
+      showarrow: false
+    }]
   };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout, {responsive: true});
